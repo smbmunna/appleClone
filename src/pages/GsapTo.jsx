@@ -1,5 +1,19 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 const GsapTo = () => {
   // TODO: Implement the gsap.to() method
+  useGSAP(()=>{
+    gsap.to("#blue-box", 
+      {
+        x:400, 
+        repeat: -1, 
+        duration: 2 , 
+        rotation: 180, 
+        yoyo: true
+      }
+    )
+  })
 
   return (
     <main>
